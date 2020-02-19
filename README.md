@@ -12,11 +12,11 @@ Some examples of famous feistel ciphers are [DES](https://en.wikipedia.org/wiki/
 ##### Decryption
 `encrypt.py -d -m ECB input_file output_file`
 
-At the moment only the ECB mode of operation is permitted.
+At the moment only ECB and CBC modes of operation are permitted.
 
 ## Cool things that could be added
 This cipher is a bit bland, it would benefit from:
-* More modes of operation. We can't add AEAD, but CBC and CTR mode would be a start.
+* More modes of operation. We can't add AEAD, but CBC (now added) and CTR mode would be a start.
 * Better handling of keys. Reading input is slow and mistake-prone, and keys are never long enough. Keys could be optionally read from an additional file.
 * I'm sure the key schedule could be improved, but i'm tempted to leave it as that was what was used in the video.
 
