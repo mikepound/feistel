@@ -2,7 +2,7 @@
 
 This is a feistel cipher implementation I wrote for a Computerphile video. While I started with this being a simple couple of functions, I realised that if I wanted proper file IO, I needed to code up a mode of operation. It now encrypts files and outputs ciphertext as files, theoretically you could write your own functions to call the cipher itself, which is found in `feistel.py`. Feel free to edit, change, reuse the code for whatever you wish.
 
-If you'd like to learn more about Feistel ciphers, please watch my video. There is also a detailed article on wikipedia [here](https://en.wikipedia.org/wiki/Feistel_cipher)
+If you'd like to learn more about Feistel ciphers, please watch [my video](https://www.youtube.com/watch?v=FGhj3CGxl8I). There is also a detailed article on wikipedia [here](https://en.wikipedia.org/wiki/Feistel_cipher)
 
 Some examples of famous feistel ciphers are [DES](https://en.wikipedia.org/wiki/Data_Encryption_Standard) and [Twofish](https://en.wikipedia.org/wiki/Twofish)
 
