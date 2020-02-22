@@ -10,9 +10,9 @@ Some examples of famous feistel ciphers are [DES](https://en.wikipedia.org/wiki/
 ##### Encryption
 `python encrypt.py -e -m ECB input_file output_file`
 ##### Decryption
-`encrypt.py -d -m ECB input_file output_file`
+`python encrypt.py -d -m ECB input_file output_file`
 
-At the moment only ECB and CBC modes of operation are permitted.
+At the moment only ECB, CBC and CTR modes of operation are permitted.
 
 ## Cool things that could be added
 This cipher is a bit bland, it would benefit from:
