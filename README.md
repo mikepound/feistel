@@ -16,7 +16,7 @@ At the moment only ECB, CBC and CTR modes of operation are permitted.
 
 ## Cool things that could be added
 This cipher is a bit bland, it would benefit from:
-* More modes of operation. We can't add AEAD, but CBC (now added) and CTR mode would be a start.
+* More modes of operation. Contributors have now added CBC and CTR, but there are other less common modes.
 * Better handling of keys. Reading input is slow and mistake-prone, and keys are never long enough. Keys could be optionally read from an additional file.
 * I'm sure the key schedule could be improved, but i'm tempted to leave it as that was what was used in the video.
 
@@ -26,5 +26,5 @@ This cipher is just a demonstration, and for fun. Please don't use it on anythin
 * It's slow, may not be a problem based on your use case, but noone is attempting to write fast ciphers in python anyway!
 * It doesn't conveniently use 256-bit keys. Because it reads strings as an input, these are likely to be much too short to be secure. This will also encrypt using no key - bad!
 * I've paid absolutely no attention to safe memory use, cache timings etc. So it's conceivable that the cipher is vulnerable while it's running - possibly after too since it doesn't wipe the key from memory.
-* It defaults to ECB mode - and indeed currently no other modes are implemented
+* It defaults to ECB mode - use of this mode is generally not encouraged.
 * It provides no message integrity since it doesn't use HMAC, GCM etc.
